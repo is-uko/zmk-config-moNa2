@@ -51,12 +51,23 @@
 &kp Q      &kp W         &kp E         &kp R             &kp T                                           &kp Y               &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F             &kp G        &trans              &trans         &kp H               &kp J  &kp K      &kp L    &kp MINUS
 &kp Z      &kp X         &kp C         &kp V             &kp B        &trans              &trans         &kp N               &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANG_HANJA  &lt 2 SPACE  &lt 3 LEFT_SHIFT    &kp BACKSPACE  &lt 5 LANG_HANGEUL                             &kp ENTER
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 LANG_HANJA  &lt 3 SPACE  &lt 1 LEFT_SHIFT    &kp BACKSPACE  &lt 2 LANG_HANGEUL                             &kp ENTER
             >;
 
             sensor-bindings =
                 <&scroll_up_down>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &kp RC(LEFT_ARROW)  &kp RA(RIGHT_ARROW)   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2            &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans              &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                      &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
@@ -81,17 +92,6 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
         layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -103,12 +103,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_5 {
+        layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                              &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
