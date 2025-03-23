@@ -104,10 +104,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                      &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
