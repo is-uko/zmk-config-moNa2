@@ -12,7 +12,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <18 19>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -20,6 +27,13 @@
             #binding-cells = <1>;
             bindings = <&to 7 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp E &kp L &kp L &kp O &kp EXCL>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -47,10 +61,10 @@
 
         layer_9 {
             bindings = <
-&none  &none  &none  &none  &none                   &none   &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none   &none   &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none   &none   &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &tog 1  &tog 2                       &none
+&none  &none  &none  &none  &none                  &none       &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none       &kp J  &kp K  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none       &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &new_macro                       &none
             >;
         };
 
@@ -169,12 +183,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        conditon1 {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
