@@ -45,21 +45,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_10 {
-            bindings = <
-&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                       &none
-            >;
-        };
-
         layer_7 {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                      &kp T                                     &kp Y           &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &trans        &trans         &kp H           &kp J  &kp K      &kp L    &lt 6 MINUS
-&kp Z      &kp X         &kp C         &kp V                      &kp B        &kp GRAVE     &kp DELETE     &kp N           &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_SHIFT LANGUAGE_2  &lt 8 SPACE  &lt 10 TAB    &kp BACKSPACE  &mt NUMBER_1 A                             &kp ENTER
+&kp Q      &kp W         &kp E         &kp R                      &kp T                                     &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                      &kp G        &trans        &trans         &kp H  &kp J  &kp K      &kp L    &lt 6 MINUS
+&kp Z      &kp X         &kp C         &kp V                      &kp B        &kp GRAVE     &kp DELETE     &kp N  &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_SHIFT LANGUAGE_2  &lt 8 SPACE  &lt 10 TAB    &kp BACKSPACE  &sk A                             &kp ENTER
             >;
 
             sensor-bindings =
@@ -87,6 +78,15 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_10 {
+            bindings = <
+&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                       &none
+            >;
         };
 
         layer_4 {
