@@ -47,6 +47,16 @@
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT Z>, <&kp LS(Z)>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {
