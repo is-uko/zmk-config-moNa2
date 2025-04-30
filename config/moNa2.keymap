@@ -48,13 +48,13 @@
             bindings = <&mt LEFT_SHIFT Z>, <&kp LS(Z)>;
         };
 
-        new_behavior: new_behavior {
+        holdortap: holdortap {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "HOLDORTAP";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <100>;
         };
     };
