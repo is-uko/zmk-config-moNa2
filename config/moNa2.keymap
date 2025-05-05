@@ -6,11 +6,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
-
 / {
     combos { compatible = "zmk,combos"; };
 
