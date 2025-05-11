@@ -67,10 +67,10 @@
 
         layer_1 {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6                &kp N7                 &kp N8          &kp N9              &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp UP_ARROW    &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp RC(UP_ARROW)
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                                           &trans
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7          &kp N8          &kp N9           &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -89,10 +89,10 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_5))                    &trans  &trans    &trans    &trans  &trans
-&trans      &trans  &trans  &trans                &trans                &trans    &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans      &trans  &trans  &trans                &trans                &trans    &trans  &trans  &trans    &trans    &trans  &trans
-&trans      &trans  &trans  &trans                &trans                &trans    &trans  &trans                              &trans
+&kp ESCAPE  &trans  &trans  &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_5))                    &trans  &trans                &trans                 &trans              &kp RC(UP_ARROW)
+&trans      &trans  &trans  &trans                &trans                &trans    &trans  &trans  &mkp MB1              &mkp MB2               &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)
+&trans      &trans  &trans  &trans                &trans                &trans    &trans  &trans  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &trans              &trans
+&trans      &trans  &trans  &trans                &trans                &trans    &trans  &trans                                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -111,10 +111,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                      &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
