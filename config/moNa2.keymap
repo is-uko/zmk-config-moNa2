@@ -47,6 +47,8 @@
             label = "TAPDANCE_Z";
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT Z>, <&kp LS(Z)>;
+
+            tapping-term-ms = <50>;
         };
     };
 
