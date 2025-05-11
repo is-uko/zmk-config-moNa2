@@ -9,7 +9,6 @@
 &mt {
     flavor = "tap-preferred";
     quick-tap-ms = <0>;
-    tapping-term-ms = <100>;
 };
 
 / {
@@ -48,7 +47,7 @@
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT Z>, <&kp LS(Z)>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
