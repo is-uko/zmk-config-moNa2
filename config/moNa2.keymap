@@ -7,8 +7,10 @@
 #define MOUSE 6
 
 &mt {
-    flavor = "tap-unless-interrupted";
+    flavor = "balanced";
     quick-tap-ms = <0>;
+    tapping-term-ms = <300>;
+    require-prior-idle-ms = <100>;
 };
 
 / {
@@ -47,7 +49,7 @@
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT Z>, <&kp LS(Z)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
     };
 
