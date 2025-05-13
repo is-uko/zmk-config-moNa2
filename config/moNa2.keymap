@@ -6,11 +6,9 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
-tapping-term-ms {
-    = <150>;};
+&mt { flavor = "tap-preferred"; };
 
-/
-
+/ {
     combos { compatible = "zmk,combos"; };
 
     macros {
